@@ -1,0 +1,5 @@
+[0m[[0m[31merror[0m] [0m[0m/Users/akara/Desktop/BelieveTest/src/it/scala/JobIT.scala:8:7: overriding method run in trait BeforeAndAfterAll of type (testName: Option[String], args: org.scalatest.Args)org.scalatest.Status;[0m
+[0m[[0m[31merror[0m] [0m[0m method run in trait AnyFlatSpecLike of type (testName: Option[String], args: org.scalatest.Args)org.scalatest.Status needs `abstract override' modifiers[0m
+[0m[[0m[31merror[0m] [0m[0mclass JobIT extends   BeforeAndAfterAll with AnyFlatSpecLike {[0m
+[0m[[0m[31merror[0m] [0m[0m      ^[0m
+[0m[[0m[31merror[0m] [0m[0mone error found[0m

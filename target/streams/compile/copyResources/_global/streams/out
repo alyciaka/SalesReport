@@ -1,0 +1,4 @@
+[0m[[0m[0mdebug[0m] [0m[0mCopy resource mappings: [0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/akara/Desktop/BelieveTest/src/main/resources/albums.csv,/Users/akara/Desktop/BelieveTest/target/scala-2.12/classes/albums.csv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/akara/Desktop/BelieveTest/src/main/resources/songs.csv,/Users/akara/Desktop/BelieveTest/target/scala-2.12/classes/songs.csv)[0m
+[0m[[0m[0mdebug[0m] [0m[0m	(/Users/akara/Desktop/BelieveTest/src/main/resources/sales.csv,/Users/akara/Desktop/BelieveTest/target/scala-2.12/classes/sales.csv)[0m
