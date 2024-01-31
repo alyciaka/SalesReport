@@ -3,7 +3,7 @@ package jobs
 import domain.SalesReportSchema
 import org.apache.spark.sql.functions._
 import org.apache.spark.sql.types.{DecimalType, DoubleType}
-import org.apache.spark.sql.{DataFrame, SparkSession}
+import org.apache.spark.sql.DataFrame
 import org.apache.spark.sql.{Dataset, SparkSession}
 import loader.Extractor
 
@@ -70,7 +70,7 @@ class Job (spark: SparkSession, extractor: Extractor) {
   }
 
   def save(salesReport: Dataset[SalesReportSchema]): Unit = {
-    salesReport.write.format("delta").save("/Users/akara/Desktop/BelieveTest/src/output")
+    salesReport.write.format("delta").save("src/output")
   }
 }
 

@@ -15,15 +15,6 @@ trait SupportSpec extends AnyFlatSpecLike
 
   val logger: Logger = LoggerFactory.getLogger(getClass)
 
-  def caseClassFields[T: TypeTag]: List[String] = {
-    /* similar output as Product.productElementNames (scala 2.13) */
-    typeOf[T].decls.sorted.collect { case m: MethodSymbol if m.isCaseAccessor ⇒ m.name.toString }
-  }
-
-  protected def checkField(fieldName: String, expected: Any, result: Any): Unit = {
-    if (expected != result) logger.info(s"Actual $fieldName is $result while expecting $expected")
-  }
-
   def getOrCreateSparkSession(): SparkSession = {
     val executors = 1
     val sparkSession =
